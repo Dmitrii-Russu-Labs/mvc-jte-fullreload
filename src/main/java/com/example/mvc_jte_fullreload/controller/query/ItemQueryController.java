@@ -21,7 +21,7 @@ public class ItemQueryController {
     public String showAllItems(Model model) {
         List<Item> items = service.findAll();
         model.addAttribute("items", items);
-        return "items";
+        return "item/list";
     }
 
     @GetMapping("/searchById")
@@ -31,7 +31,7 @@ public class ItemQueryController {
     ) {
         Item item = service.findById(id);
         model.addAttribute("item", item);
-        return "item";
+        return "item/item-details";
     }
 
     @GetMapping("/searchByName")
@@ -48,7 +48,7 @@ public class ItemQueryController {
             model.addAttribute("searchTerm", name);
         }
         model.addAttribute("items", items);
-        return "items2";
+        return "item/item-search-results";
     }
 
 }

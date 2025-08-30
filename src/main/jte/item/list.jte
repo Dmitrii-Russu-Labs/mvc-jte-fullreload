@@ -10,7 +10,7 @@
 @for (Item i : items)
     <li>
         ID: ${i.getId()} — ${i.getName()}
-        <a href="/items/search?id=${i.getId()}">Выбрать</a>&nbsp;
+        <a href="/items/searchById?id=${i.getId()}">Выбрать</a>&nbsp;
         <a href="/items/${i.getId()}/edit">Редактировать</a>&nbsp;
         <a href="/items/${i.getId()}/delete">Удалить</a>
     </li>
