@@ -9,11 +9,11 @@ import com.example.mvc_jte_fullreload.service.ItemService;
 
 @Controller
 @RequestMapping({"", "/", "/items"})
-public class ItemOperationController {
+public class ItemQueryController {
 
     private ItemService service;
 
-    public ItemOperationController(ItemService service) {
+    public ItemQueryController(ItemService service) {
         this.service = service;
     }
 
