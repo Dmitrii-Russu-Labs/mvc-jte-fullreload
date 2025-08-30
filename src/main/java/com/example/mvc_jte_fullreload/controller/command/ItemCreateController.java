@@ -25,6 +25,6 @@ public class ItemCreateController {
     ) {
         Item saved = service.saveOrUpdate(item);
         redirectAttributes.addFlashAttribute("message", "User information saved successfully!");
-        return "redirect:/items/search?id=" + saved.getId();
+        return "redirect:/items/searchById?id=" + saved.getId();
     }
 }

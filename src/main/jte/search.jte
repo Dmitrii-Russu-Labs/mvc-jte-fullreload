@@ -12,7 +12,7 @@
 </form>
 
 <h2>Поиск задачи по ID</h2>
-<form action="/search" method="get">
+<form action="/searchById" method="get">
     <label for="id">ID:</label>
     <input id="id" type="number" name="id"/>
     <button type="submit">Найти</button>

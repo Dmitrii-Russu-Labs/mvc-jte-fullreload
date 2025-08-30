@@ -6,8 +6,8 @@
 
 <hr>
 <h2>Вернуться к заданию</h2>
-<a href="/search?id=${item.getId()}">Вернуться к заданию</a>
-<form action="/search" method="get" style="display:inline;">
+<a href="/searchById?id=${item.getId()}">Вернуться к заданию</a>
+<form action="/searchById" method="get" style="display:inline;">
     <input type="hidden" name="id" value="${item.getId()}" />
     <button type="submit">Вернуться к заданию</button>
 </form>

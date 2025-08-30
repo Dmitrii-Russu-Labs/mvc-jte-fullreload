@@ -30,7 +30,7 @@ class ItemUpdateController {
                 "message", "Задача #" + id + " успешно обновлена"
         );
         // перенаправляем на страницу просмотра
-        return "redirect:/items/search?id=" + id;
+        return "redirect:/items/searchById?id=" + id;
     }
 
 }
