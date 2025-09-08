@@ -1,4 +1,4 @@
-package com.example.mvc_jte_fullreload.entity;
+package com.example.mvc_jte_fullreload.item.entity;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;

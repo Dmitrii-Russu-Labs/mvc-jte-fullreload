@@ -1,10 +1,10 @@
-package com.example.mvc_jte_fullreload.service;
+package com.example.mvc_jte_fullreload.item.service;
 
 import java.util.List;
 import java.util.NoSuchElementException;
 import org.springframework.stereotype.Service;
-import com.example.mvc_jte_fullreload.entity.Item;
-import com.example.mvc_jte_fullreload.repository.ItemRepository;
+import com.example.mvc_jte_fullreload.item.entity.Item;
+import com.example.mvc_jte_fullreload.item.repository.ItemRepository;
 
 @Service
 public class ItemService {

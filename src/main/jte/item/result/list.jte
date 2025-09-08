@@ -1,5 +1,5 @@
 @import java.util.List
-@import com.example.mvc_jte_fullreload.entity.Item
+@import com.example.mvc_jte_fullreload.item.entity.Item
 
 @param List<Item> items
 @param String searchTerm

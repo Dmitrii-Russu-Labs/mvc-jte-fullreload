@@ -1,6 +1,6 @@
 @param String error
 @param String message
-@param com.example.mvc_jte_fullreload.entity.Item item
+@param com.example.mvc_jte_fullreload.item.entity.Item item
 
 <h2>Main page</h2>
 

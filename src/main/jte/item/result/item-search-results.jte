@@ -1,4 +1,4 @@
-@import com.example.mvc_jte_fullreload.entity.Item
+@import com.example.mvc_jte_fullreload.item.entity.Item
 @import java.util.List
 @param List<Item> items
 

@@ -1,6 +1,6 @@
-package com.example.mvc_jte_fullreload.repository;
+package com.example.mvc_jte_fullreload.item.repository;
 
-import com.example.mvc_jte_fullreload.entity.Item;
+import com.example.mvc_jte_fullreload.item.entity.Item;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

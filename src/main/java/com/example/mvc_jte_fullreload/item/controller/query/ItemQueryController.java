@@ -1,11 +1,11 @@
-package com.example.mvc_jte_fullreload.controller.query;
+package com.example.mvc_jte_fullreload.item.controller.query;
 
 import java.util.List;
 import org.springframework.ui.Model;
-import com.example.mvc_jte_fullreload.entity.Item;
+import com.example.mvc_jte_fullreload.item.entity.Item;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-import com.example.mvc_jte_fullreload.service.ItemService;
+import com.example.mvc_jte_fullreload.item.service.ItemService;
 
 @Controller
 @RequestMapping({"", "/", "/items"})
@@ -21,7 +21,7 @@ public class ItemQueryController {
     public String showAllItems(Model model) {
         List<Item> items = service.findAll();
         model.addAttribute("items", items);
-        return "item/list";
+        return "item/result/list";
     }
 
     @GetMapping("/searchById")
@@ -31,7 +31,7 @@ public class ItemQueryController {
     ) {
         Item item = service.findById(id);
         model.addAttribute("item", item);
-        return "item/item-details";
+        return "item/result/item-details";
     }
 
     @GetMapping("/searchByName")
@@ -48,7 +48,7 @@ public class ItemQueryController {
             model.addAttribute("searchTerm", name);
         }
         model.addAttribute("items", items);
-        return "item/item-search-results";
+        return "item/result/item-search-results";
     }
 
 }

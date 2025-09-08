@@ -1,9 +1,9 @@
-package com.example.mvc_jte_fullreload.controller.command;
+package com.example.mvc_jte_fullreload.item.controller.command;
 
 import jakarta.validation.Valid;
-import com.example.mvc_jte_fullreload.entity.Item;
+import com.example.mvc_jte_fullreload.item.entity.Item;
 import org.springframework.stereotype.Controller;
-import com.example.mvc_jte_fullreload.service.ItemService;
+import com.example.mvc_jte_fullreload.item.service.ItemService;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;

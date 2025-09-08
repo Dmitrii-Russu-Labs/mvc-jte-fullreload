@@ -1,13 +1,13 @@
-package com.example.mvc_jte_fullreload.controller.query;
+package com.example.mvc_jte_fullreload.item.controller.query;
 
-import com.example.mvc_jte_fullreload.entity.Item;
+import com.example.mvc_jte_fullreload.item.entity.Item;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import com.example.mvc_jte_fullreload.service.ItemService;
+import com.example.mvc_jte_fullreload.item.service.ItemService;
 
 @Controller
 @RequestMapping({"", "/", "/items"})
@@ -27,13 +27,13 @@ public class ItemViewController {
     ) {
         model.addAttribute("error", error);
         model.addAttribute("message", message);
-        return "item/main-page-search"; // Main page
+        return "item/form/main-page-search"; // Main page
     }
 
     @GetMapping("/new")
     public String showCreateForm(Model model) {
         model.addAttribute("item", new Item());
-        return "item/create-form";
+        return "item/form/create-form";
     }
 
     @GetMapping("/{id}/edit")
@@ -42,14 +42,14 @@ public class ItemViewController {
     ) {
         Item item = service.findById(id);
         model.addAttribute("item", item);
-        return "item/edit-form";
+        return "item/form/edit-form";
     }
 
     @GetMapping("/{id}/delete")
     public String showDeleteConfirmationForm(@PathVariable Long id, Model model) {
         Item item = service.findById(id);
         model.addAttribute("item", item);
-        return "item/delete-confirm-form";
+        return "item/form/delete-confirm-form";
     }
 
 }
